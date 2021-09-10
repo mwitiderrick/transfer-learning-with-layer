@@ -1,0 +1,16 @@
+
+apiVersion: 1
+
+type: featureset
+
+name: "cat_and_dog_features"
+description: "Cat Dog Features"
+
+features:
+  - name: category
+    description: "Target label"
+    source: category/category.py
+    environment: category/requirements.txt
+
+materialization:
+    target: layer-public-datasets
